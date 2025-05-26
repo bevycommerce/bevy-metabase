@@ -25,7 +25,7 @@ applogs:
 	docker compose logs metabase
 
 dblogsf:
-	docker compose logs db -f
+	docker compose logs postgres -f
 
 applogsf:
 	docker compose logs metabase -f
