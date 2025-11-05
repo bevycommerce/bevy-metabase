@@ -15,6 +15,11 @@ services:
       MB_DB_USER: metabase
       MB_DB_PASS: mysecretpassword
       MB_DB_HOST: postgres
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200m"
+        max-file: "5"
     networks:
       - metanet1
     healthcheck:
